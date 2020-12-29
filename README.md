@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🦺 Create React Component 🦺</h1>
+<h1>🛵 Create React Component 🛵</h1>
 <p>A CLI react component creator</p>
 </div>
 
