@@ -25,26 +25,33 @@ const options = {
     return;
   }
 
+  if (!argv.c || argv.component) {
+    log("You must provide a component name", {
+      type: "error",
+      header,
+    });
+    return;
+  }
+
   try {
     let message = [];
     let type = "success";
 
     const dirMessage = createNewDir();
-    message.push(`${dirMessage.message}\n`);
-    type = dirMessage.type || type;
+    message.push(`${dirMessage}\n`);
 
     const componentMessage = createComponentFile();
-    message.push(componentMessage.message);
+    message.push(componentMessage);
 
     const sassMessage = createScssFile();
-    message.push(sassMessage.message);
+    message.push(sassMessage);
 
     const testMessage = createTestFile();
-    message.push(testMessage.message);
+    message.push(testMessage);
 
     if (options.withStory.some((alias) => Boolean(argv[alias]))) {
       const storyMessage = createStoryFile();
-      message.push(storyMessage.message);
+      message.push(storyMessage);
     }
 
     log(message.join("\n"), {
@@ -52,6 +59,6 @@ const options = {
       header,
     });
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
   }
 })();

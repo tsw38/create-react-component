@@ -37,9 +37,7 @@ export const Default = (args) => <${c || component}Component {...args} />
     "utf-8"
   );
 
-  return {
-    message: "Creating story file",
-  };
+  return "Creating story file";
 };
 
 export default createComponentFile;

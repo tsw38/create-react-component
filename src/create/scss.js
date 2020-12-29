@@ -19,9 +19,7 @@ const createScssFile = () => {
     "utf-8"
   );
 
-  return {
-    message: "Creating scss file",
-  };
+  return "Creating scss file";
 };
 
 export default createScssFile;

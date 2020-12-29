@@ -32,9 +32,7 @@ describe('<${c || component} />', () => {
     `
   );
 
-  return {
-    message: "Creating test file",
-  };
+  return "Creating test file";
 };
 
 export default createTestFile;

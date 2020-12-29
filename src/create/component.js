@@ -39,9 +39,7 @@ export default ${c || component};
     "utf-8"
   );
 
-  return {
-    message: "Creating component file",
-  };
+  return "Creating component file";
 };
 
 export default createComponentFile;
