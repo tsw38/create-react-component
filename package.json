@@ -1,5 +1,5 @@
 {
-  "name": "create-react-component",
+  "name": "@tsw38/create-react-component",
   "version": "0.0.0",
   "description": "A CLI snippet for creating components and their appropriate tests",
   "bin": {
