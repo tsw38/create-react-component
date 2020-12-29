@@ -1,0 +1,9 @@
+.DS_Store
+.vscode
+node_modules
+/usage/dist
+/.cache
+/bin
+usage/cypress/integration
+usage/cypress/videos
+.eslintcache
