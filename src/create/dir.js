@@ -28,7 +28,7 @@ const createNewDir = () => {
 
   const componentPath = path.resolve(
     process.env.PWD,
-    d || destination,
+    d || destination || "src/components",
     c || component
   );
 
