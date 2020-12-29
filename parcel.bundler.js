@@ -16,7 +16,7 @@ const options = {
   minify: !isDevMode,
   contentHash: false,
   detailedReport: true,
-  bundleNodeModules: "create-component",
+  bundleNodeModules: "create-react-component",
 };
 
 (async function () {
