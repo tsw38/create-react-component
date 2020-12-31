@@ -1,6 +1,6 @@
 {
   "name": "@tsw38/create-react-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI snippet for creating components and their appropriate tests",
   "bin": {
     "crc": "./bin/cli.js",
